@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar dengan Damai</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar dengan Damai</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Belajar dengan Damai, Tanpa Demo</h1>
-    </header>
 
-    <main>
-        <section class="hero">
-            <img src="img/1709737920.jpg" alt="Belajar dengan Damai">
-            <p>
-                Belajar adalah jalan menuju masa depan. 
-                Mari kita ciptakan suasana damai, penuh dialog, 
-                tanpa harus melakukan demo yang merugikan. 
-                Dengan saling mendengarkan, kita bisa menemukan solusi terbaik.
-            </p>
-        </section>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Belajar dengan Damai, Masa Depan Lebih Cerah</h1>
+      <p>Ilmu berkembang lebih indah ketika kita memilih ketenangan dan saling menghargai.</p>
+      <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
+    </div>
+  </header>
 
-        <section class="pesan">
-            <h2>Pesan Positif</h2>
-            <ul>
-                <li>Belajar lebih baik dengan suasana damai.</li>
-                <li>Dialog adalah kunci menemukan solusi bersama.</li>
-                <li>Kedamaian menciptakan masa depan yang cerah.</li>
-            </ul>
-        </section>
+  <!-- About Section -->
+  <section id="about" class="about hidden">
+    <div class="about-text">
+      <h2>Mengapa Belajar dengan Damai?</h2>
+      <p>Ketika suasana belajar tenang, ide-ide bisa tumbuh dengan subur. Tanpa keributan, setiap orang memiliki kesempatan yang sama untuk memahami ilmu. Kedamaian bukan hanya pilihan, tetapi jalan menuju masa depan yang lebih cerah.</p>
+    </div>
+    <div class="about-img">
+      <img src="img/about.jpg" alt="Belajar Damai">
+    </div>
+  </section>
 
-        <section class="interaktif">
-            <h2>Pesan Damai Hari Ini</h2>
-            <button id="btnPesan">Tampilkan Pesan Damai</button>
-            <p id="hasilPesan"></p>
-        </section>
-    </main>
+  <!-- Cards Section -->
+  <section class="content">
+    <div class="card hidden">
+      <img src="img/damai.jpg" alt="Pesan Damai">
+      <h3>Pesan Damai</h3>
+      <p>Ketika suasana belajar tenang, pikiran menjadi jernih dan mudah menerima ilmu. Kedamaian adalah pupuk terbaik bagi cita-cita yang kita tanam.</p>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Belajar dengan Damai | Dibuat untuk tugas daring</p>
-    </footer>
+    <div class="card hidden">
+      <img src="img/dialog.jpg" alt="Pentingnya Dialog">
+      <h3>Pentingnya Dialog</h3>
+      <p>Dengan berdialog, setiap suara bisa terdengar tanpa harus menimbulkan keributan. Percakapan yang sehat akan membawa kita pada solusi yang adil dan bijak.</p>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="card hidden">
+      <img src="img/solusi.jpg" alt="Solusi Tanpa Demo">
+      <h3>Solusi Tanpa Demo</h3>
+      <p>Aspirasi dapat disampaikan melalui diskusi terbuka, musyawarah, atau forum resmi. Damai bukan berarti pasif, melainkan menyuarakan pendapat dengan bijaksana.</p>
+    </div>
+  </section>
+
+  <!-- Quote Section dengan JS -->
+  <section class="quote hidden">
+    <h2 id="quoteText">“Belajar dengan damai adalah investasi terbaik untuk masa depan.”</h2>
+    <button id="btnPesan">Tampilkan Pesan Lain</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Belajar dengan Damai | Tugas Daring</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
